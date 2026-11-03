@@ -15,30 +15,34 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 6 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> >>
 endobj
 6 0 obj
-<< /Length 7783 >>
+<< /Length 5357 >>
 stream
 BT
 0.055 0.165 0.290 rg
 /F2 22 Tf
 1 0 0 1 54 714 Tm
+0 Tw
 (Mahbub Ali) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 11 Tf
 1 0 0 1 54 696 Tm
+0 Tw
 (Research proposal) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F2 12 Tf
 1 0 0 1 54 672 Tm
+0 Tw
 (Machine Learning-Based Predictive Analytics for Early Disease Risk Detection Using) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F2 12 Tf
 1 0 0 1 54 656 Tm
+0 Tw
 (Electronic Health Records) Tj
 ET
 0.780 0.800 0.835 rg
@@ -48,42 +52,49 @@ BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 620 Tm
+0 Tw
 (Level: Master's by Research. Field: Computer Science.) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 602 Tm
+0.2885 Tw
 (Prepared for your university and the supervisors reviewing this proposal. This is not a current enrolment.) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 584 Tm
-[(Candidate ) -279.64 (background: ) -279.64 (Bachelor's ) -279.64 (in ) -279.64 (Computer ) -279.64 (Science ) -279.64 (and ) -279.64 (Engineering, ) -279.64 (Green ) -279.64 (University ) -279.64 (of ) -279.64 (Bangladesh,)] TJ
+0.2796 Tw
+(Candidate background: Bachelor's in Computer Science and Engineering, Green University of Bangladesh,) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 570 Tm
+0 Tw
 (CGPA 3.54. Software Developer, 3+ years.) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 552 Tm
-[(Status: ) -5.71 (proposal ) -5.71 (in ) -5.71 (preparation. ) -5.71 (This ) -5.71 (document ) -5.71 (is ) -5.71 (not ) -5.71 (completed ) -5.71 (research, ) -5.71 (not ) -5.71 (a ) -5.71 (publication, ) -5.71 (and ) -5.71 (it ) -5.71 (does ) -5.71 (not ) -5.71 (report)] TJ
+0.0057 Tw
+(Status: proposal in preparation. This document is not completed research, not a publication, and it does not report) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 538 Tm
+0 Tw
 (experiments or model results.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F2 12 Tf
 1 0 0 1 54 510 Tm
+0 Tw
 (Background) Tj
 ET
 0.780 0.800 0.835 rg
@@ -93,78 +104,91 @@ BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 478 Tm
-[(Electronic ) -142.83 (health ) -142.83 (records ) -142.83 (collect ) -142.83 (diagnoses, ) -142.83 (medications, ) -142.83 (laboratory ) -142.83 (results, ) -142.83 (and ) -142.83 (encounter ) -142.83 (histories ) -142.83 (over ) -142.83 (time.)] TJ
+0.1428 Tw
+(Electronic health records collect diagnoses, medications, laboratory results, and encounter histories over time.) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 464 Tm
-[(That ) -211.37 (longitudinal ) -211.37 (record ) -211.37 (may ) -211.37 (contain ) -211.37 (signals ) -211.37 (of ) -211.37 (disease ) -211.37 (risk ) -211.37 (earlier ) -211.37 (than ) -211.37 (a ) -211.37 (single ) -211.37 (visit ) -211.37 (would ) -211.37 (show. ) -211.37 (Machine)] TJ
+0.2114 Tw
+(That longitudinal record may contain signals of disease risk earlier than a single visit would show. Machine) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 450 Tm
-[(learning ) -85.61 (has ) -85.61 (been ) -85.61 (studied ) -85.61 (for ) -85.61 (this ) -85.61 (kind ) -85.61 (of ) -85.61 (prediction, ) -85.61 (but ) -85.61 (a ) -85.61 (useful ) -85.61 (model ) -85.61 (still ) -85.61 (depends ) -85.61 (on ) -85.61 (the ) -85.61 (outcome ) -85.61 (definition,)] TJ
+0.0856 Tw
+(learning has been studied for this kind of prediction, but a useful model still depends on the outcome definition,) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 436 Tm
+0 Tw
 (the validation design, and whether a reviewer can see why a prediction was made.) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 418 Tm
-[(What ) -33.28 (follows ) -33.28 (is ) -33.28 (the ) -33.28 (study ) -33.28 (I ) -33.28 (intend ) -33.28 (to ) -33.28 (pursue. ) -33.28 (The ) -33.28 (specific ) -33.28 (condition, ) -33.28 (outcome ) -33.28 (label, ) -33.28 (and ) -33.28 (prediction ) -33.28 (window ) -33.28 (are ) -33.28 (not)] TJ
+0.0333 Tw
+(What follows is the study I intend to pursue. The specific condition, outcome label, and prediction window are not) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 404 Tm
-[(fixed ) -5.05 (yet. ) -5.05 (They ) -5.05 (should ) -5.05 (be ) -5.05 (chosen ) -5.05 (after ) -5.05 (a ) -5.05 (literature ) -5.05 (review ) -5.05 (and ) -5.05 (after ) -5.05 (a ) -5.05 (suitable ) -5.05 (dataset ) -5.05 (is ) -5.05 (identified, ) -5.05 (and ) -5.05 (they ) -5.05 (should)] TJ
+0.0051 Tw
+(fixed yet. They should be chosen after a literature review and after a suitable dataset is identified, and they should) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 390 Tm
+0 Tw
 (be locked before any model comparison begins.) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 372 Tm
-[(The ) -499.38 (practical ) -499.38 (background ) -499.38 (is ) -499.38 (healthcare ) -499.38 (software, ) -499.38 (not ) -499.38 (a ) -499.38 (finished ) -499.38 (prediction ) -499.38 (study. ) -499.38 (That ) -499.38 (work ) -499.38 (includes)] TJ
+0.4994 Tw
+(The practical background is healthcare software, not a finished prediction study. That work includes) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 358 Tm
-[(HealthConnect, ) -7.29 (PrimeMIS, ) -7.29 (Sakura ) -7.29 (ENT ) -7.29 (Center, ) -7.29 (prescription ) -7.29 (writing, ) -7.29 (and ) -7.29 (MediScan ) -7.29 (Pro, ) -7.29 (grouped ) -7.29 (in ) -7.29 (part ) -7.29 (under ) -7.29 (the)] TJ
+0.0073 Tw
+(HealthConnect, PrimeMIS, Sakura ENT Center, prescription writing, and MediScan Pro, grouped in part under the) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 344 Tm
-[(company ) -13.37 (name ) -13.37 (SakuraEHealth. ) -13.37 (A ) -13.37 (May ) -13.37 (2025 ) -13.37 (field ) -13.37 (summary ) -13.37 (for ) -13.37 (MediScan ) -13.37 (Pro, ) -13.37 (in ) -13.37 (Dhaka, ) -13.37 (reports ) -13.37 (report ) -13.37 (time, ) -13.37 (ease)] TJ
+0.0134 Tw
+(company name SakuraEHealth. A May 2025 field summary for MediScan Pro, in Dhaka, reports report time, ease) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 330 Tm
-[(of ) -93.90 (use, ) -93.90 (and ) -93.90 (cost ) -93.90 (for ) -93.90 (an ) -93.90 (offline ) -93.90 (USB ) -93.90 (endoscopy ) -93.90 (workflow. ) -93.90 (It ) -93.90 (does ) -93.90 (not ) -93.90 (report ) -93.90 (classifier ) -93.90 (accuracy, ) -93.90 (and ) -93.90 (it ) -93.90 (is ) -93.90 (not ) -93.90 (this)] TJ
+0.0939 Tw
+(of use, and cost for an offline USB endoscopy workflow. It does not report classifier accuracy, and it is not this) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 316 Tm
+0 Tw
 (electronic-health-record study.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F2 12 Tf
 1 0 0 1 54 288 Tm
+0 Tw
 (Problem statement) Tj
 ET
 0.780 0.800 0.835 rg
@@ -174,42 +198,49 @@ BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 256 Tm
-[(Disease ) -138.37 (risk ) -138.37 (is ) -138.37 (often ) -138.37 (recognised ) -138.37 (only ) -138.37 (after ) -138.37 (symptoms ) -138.37 (are ) -138.37 (established, ) -138.37 (when ) -138.37 (the ) -138.37 (opportunity ) -138.37 (to ) -138.37 (act ) -138.37 (earlier ) -138.37 (may)] TJ
+0.1384 Tw
+(Disease risk is often recognised only after symptoms are established, when the opportunity to act earlier may) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 242 Tm
-[(already ) -134.36 (be ) -134.36 (narrower. ) -134.36 (Electronic ) -134.36 (health ) -134.36 (records ) -134.36 (hold ) -134.36 (information ) -134.36 (that ) -134.36 (could ) -134.36 (support ) -134.36 (earlier ) -134.36 (risk ) -134.36 (stratification, ) -134.36 (but)] TJ
+0.1344 Tw
+(already be narrower. Electronic health records hold information that could support earlier risk stratification, but) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 228 Tm
+0 Tw
 (those records are uneven, sometimes incomplete, and always sensitive.) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 210 Tm
-[(The ) -258.87 (problem ) -258.87 (this ) -258.87 (proposal ) -258.87 (addresses ) -258.87 (is ) -258.87 (how ) -258.87 (to ) -258.87 (compare ) -258.87 (standard ) -258.87 (predictive ) -258.87 (models ) -258.87 (for ) -258.87 (early ) -258.87 (disease ) -258.87 (risk)] TJ
+0.2589 Tw
+(The problem this proposal addresses is how to compare standard predictive models for early disease risk) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 196 Tm
-[(detection ) -65.19 (on ) -65.19 (electronic ) -65.19 (health ) -65.19 (record ) -65.19 (data, ) -65.19 (and ) -65.19 (how ) -65.19 (to ) -65.19 (explain ) -65.19 (the ) -65.19 (predictions, ) -65.19 (without ) -65.19 (treating ) -65.19 (a ) -65.19 (research ) -65.19 (metric)] TJ
+0.0652 Tw
+(detection on electronic health record data, and how to explain the predictions, without treating a research metric) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 182 Tm
+0 Tw
 (as a clinical decision.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F2 12 Tf
 1 0 0 1 54 154 Tm
+0 Tw
 (Objectives) Tj
 ET
 0.780 0.800 0.835 rg
@@ -219,36 +250,42 @@ BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 122 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 122 Tm
-[(Review ) -269.54 (published ) -269.54 (research ) -269.54 (on ) -269.54 (machine ) -269.54 (learning ) -269.54 (for ) -269.54 (early ) -269.54 (disease ) -269.54 (risk ) -269.54 (detection ) -269.54 (using ) -269.54 (electronic ) -269.54 (health)] TJ
+0.2695 Tw
+(Review published research on machine learning for early disease risk detection using electronic health) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 108 Tm
+0 Tw
 (records.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 92 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 92 Tm
-[(Select ) -273.17 (one ) -273.17 (ethically ) -273.17 (accessible ) -273.17 (dataset ) -273.17 (and ) -273.17 (document ) -273.17 (its ) -273.17 (population, ) -273.17 (features, ) -273.17 (missingness, ) -273.17 (and ) -273.17 (known)] TJ
+0.2732 Tw
+(Select one ethically accessible dataset and document its population, features, missingness, and known) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 78 Tm
+0 Tw
 (biases.) Tj
 ET
 0.780 0.800 0.835 rg
@@ -257,6 +294,7 @@ f
 BT
 0.290 0.333 0.408 rg
 /F1 8 Tf
+0 Tw
 1 0 0 1 54 28 Tm
 (Mahbub Ali  |  Research proposal    1 / 3) Tj
 ET
@@ -266,78 +304,90 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 8 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> >>
 endobj
 8 0 obj
-<< /Length 8358 >>
+<< /Length 6262 >>
 stream
 BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 726 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 726 Tm
-[(Define ) -10.25 (the ) -10.25 (prediction ) -10.25 (outcome ) -10.25 (and ) -10.25 (time ) -10.25 (horizon, ) -10.25 (then ) -10.25 (prepare ) -10.25 (the ) -10.25 (data ) -10.25 (without ) -10.25 (leaking ) -10.25 (information ) -10.25 (into ) -10.25 (the ) -10.25 (test)] TJ
+0.0102 Tw
+(Define the prediction outcome and time horizon, then prepare the data without leaking information into the test) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 712 Tm
+0 Tw
 (set.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 696 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 696 Tm
+0.3476 Tw
 (Train and compare logistic regression, random forest, XGBoost, and support vector machine models.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 680 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 680 Tm
+0 Tw
 (Evaluate the models with accuracy, precision, recall, F1-score, and ROC-AUC.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 664 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 664 Tm
+0 Tw
 (Apply SHAP to interpret feature contributions for the selected model or models.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 648 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 648 Tm
+0 Tw
 (State the privacy, bias, and clinical-use limits of any finding.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F2 12 Tf
 1 0 0 1 54 622 Tm
+0 Tw
 (Research questions) Tj
 ET
 0.780 0.800 0.835 rg
@@ -347,72 +397,84 @@ BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 590 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 590 Tm
-[(To ) -205.00 (what ) -205.00 (extent ) -205.00 (can ) -205.00 (these ) -205.00 (models ) -205.00 (estimate ) -205.00 (early ) -205.00 (disease ) -205.00 (risk ) -205.00 (from ) -205.00 (the ) -205.00 (features ) -205.00 (available ) -205.00 (in ) -205.00 (the ) -205.00 (selected)] TJ
+0.2050 Tw
+(To what extent can these models estimate early disease risk from the features available in the selected) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 576 Tm
+0 Tw
 (electronic health records?) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 560 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 560 Tm
-[(How ) -179.77 (do ) -179.77 (logistic ) -179.77 (regression, ) -179.77 (random ) -179.77 (forest, ) -179.77 (XGBoost, ) -179.77 (and ) -179.77 (support ) -179.77 (vector ) -179.77 (machines ) -179.77 (compare ) -179.77 (on ) -179.77 (accuracy,)] TJ
+0.1798 Tw
+(How do logistic regression, random forest, XGBoost, and support vector machines compare on accuracy,) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 546 Tm
+0 Tw
 (precision, recall, F1-score, and ROC-AUC?) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 530 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 530 Tm
-[(Which ) -55.47 (features ) -55.47 (contribute ) -55.47 (most ) -55.47 (to ) -55.47 (the ) -55.47 (predictions ) -55.47 (according ) -55.47 (to ) -55.47 (SHAP, ) -55.47 (and ) -55.47 (how ) -55.47 (should ) -55.47 (those ) -55.47 (explanations ) -55.47 (be)] TJ
+0.0555 Tw
+(Which features contribute most to the predictions according to SHAP, and how should those explanations be) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 516 Tm
+0 Tw
 (read?) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 500 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 500 Tm
+0 Tw
 (What limits of data quality, bias, and privacy must qualify the findings?) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F2 12 Tf
 1 0 0 1 54 474 Tm
+0 Tw
 (Methodology) Tj
 ET
 0.780 0.800 0.835 rg
@@ -422,114 +484,133 @@ BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 442 Tm
+0.0075 Tw
 (The study is planned in six stages. None of these stages has been carried out, and no dataset has been selected.) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 424 Tm
-[(1. ) -119.15 (Literature ) -119.15 (review. ) -119.15 (Survey ) -119.15 (peer-reviewed ) -119.15 (work ) -119.15 (on ) -119.15 (electronic ) -119.15 (health ) -119.15 (record ) -119.15 (risk ) -119.15 (prediction, ) -119.15 (evaluation ) -119.15 (practice,)] TJ
+0.1192 Tw
+(1. Literature review. Survey peer-reviewed work on electronic health record risk prediction, evaluation practice,) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 410 Tm
-[(and ) -182.24 (explainable ) -182.24 (AI ) -182.24 (in ) -182.24 (healthcare. ) -182.24 (Use ) -182.24 (that ) -182.24 (review ) -182.24 (to ) -182.24 (fix ) -182.24 (the ) -182.24 (clinical ) -182.24 (question, ) -182.24 (the ) -182.24 (outcome ) -182.24 (definition, ) -182.24 (and ) -182.24 (the)] TJ
+0.1822 Tw
+(and explainable AI in healthcare. Use that review to fix the clinical question, the outcome definition, and the) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 396 Tm
+0 Tw
 (prediction horizon before any model is trained.) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 378 Tm
-[(2. ) -41.76 (Dataset ) -41.76 (selection. ) -41.76 (Use ) -41.76 (a ) -41.76 (public ) -41.76 (dataset ) -41.76 (with ) -41.76 (a ) -41.76 (clear ) -41.76 (licence, ) -41.76 (or ) -41.76 (a ) -41.76 (dataset ) -41.76 (available ) -41.76 (under ) -41.76 (institutional ) -41.76 (approval.)] TJ
+0.0418 Tw
+(2. Dataset selection. Use a public dataset with a clear licence, or a dataset available under institutional approval.) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 364 Tm
+0.1169 Tw
 (Record who it represents and what it cannot support. No identifiable patient data is collected for this proposal.) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 346 Tm
-[(3. ) -16.56 (Data ) -16.56 (preparation. ) -16.56 (Define ) -16.56 (the ) -16.56 (cohort ) -16.56 (and ) -16.56 (the ) -16.56 (outcome ) -16.56 (from ) -16.56 (the ) -16.56 (selected ) -16.56 (records. ) -16.56 (Inspect ) -16.56 (missing ) -16.56 (values, ) -16.56 (coding)] TJ
+0.0166 Tw
+(3. Data preparation. Define the cohort and the outcome from the selected records. Inspect missing values, coding) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 332 Tm
-[(differences, ) -14.00 (and ) -14.00 (class ) -14.00 (balance ) -14.00 (before ) -14.00 (choosing ) -14.00 (how ) -14.00 (to ) -14.00 (handle ) -14.00 (them. ) -14.00 (Where ) -14.00 (records ) -14.00 (are ) -14.00 (longitudinal, ) -14.00 (split ) -14.00 (training,)] TJ
+0.0140 Tw
+(differences, and class balance before choosing how to handle them. Where records are longitudinal, split training,) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 318 Tm
+0 Tw
 (validation, and test data by patient so that one person's later visits do not leak into training.) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 300 Tm
-[(4. ) -221.57 (Model ) -221.57 (development. ) -221.57 (Train ) -221.57 (logistic ) -221.57 (regression, ) -221.57 (random ) -221.57 (forest, ) -221.57 (XGBoost, ) -221.57 (and ) -221.57 (a ) -221.57 (support ) -221.57 (vector ) -221.57 (machine ) -221.57 (as)] TJ
+0.2216 Tw
+(4. Model development. Train logistic regression, random forest, XGBoost, and a support vector machine as) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 286 Tm
-[(comparable ) -300.79 (candidates. ) -300.79 (Tune ) -300.79 (hyperparameters ) -300.79 (on ) -300.79 (validation ) -300.79 (data ) -300.79 (only. ) -300.79 (Reserve ) -300.79 (the ) -300.79 (test ) -300.79 (set ) -300.79 (for ) -300.79 (one ) -300.79 (final)] TJ
+0.3008 Tw
+(comparable candidates. Tune hyperparameters on validation data only. Reserve the test set for one final) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 272 Tm
+0 Tw
 (comparison.) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 254 Tm
-[(5. ) -127.69 (Evaluation ) -127.69 (and ) -127.69 (explanation. ) -127.69 (Compare ) -127.69 (the ) -127.69 (models ) -127.69 (with ) -127.69 (accuracy, ) -127.69 (precision, ) -127.69 (recall, ) -127.69 (F1-score, ) -127.69 (and ) -127.69 (ROC-AUC.)] TJ
+0.1277 Tw
+(5. Evaluation and explanation. Compare the models with accuracy, precision, recall, F1-score, and ROC-AUC.) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 240 Tm
-[(Discuss ) -329.00 (the ) -329.00 (decision ) -329.00 (threshold ) -329.00 (in ) -329.00 (relation ) -329.00 (to ) -329.00 (false ) -329.00 (negatives ) -329.00 (and ) -329.00 (false ) -329.00 (positives. ) -329.00 (Apply ) -329.00 (SHAP ) -329.00 (so ) -329.00 (feature)] TJ
+0.3290 Tw
+(Discuss the decision threshold in relation to false negatives and false positives. Apply SHAP so feature) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 226 Tm
+0 Tw
 (contributions can be read alongside the scores.) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 208 Tm
+0.0027 Tw
 (6. Ethical boundary. Keep the work inside research evaluation. A later clinical use would need separate validation,) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 194 Tm
-[(clinical ) -134.75 (collaboration, ) -134.75 (and ) -134.75 (the ) -134.75 (appropriate ) -134.75 (regulatory ) -134.75 (review. ) -134.75 (This ) -134.75 (proposal ) -134.75 (is ) -134.75 (not ) -134.75 (a ) -134.75 (plan ) -134.75 (to ) -134.75 (deploy ) -134.75 (a ) -134.75 (diagnostic)] TJ
+0.1348 Tw
+(clinical collaboration, and the appropriate regulatory review. This proposal is not a plan to deploy a diagnostic) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 180 Tm
+0 Tw
 (system.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F2 12 Tf
 1 0 0 1 54 152 Tm
+0 Tw
 (Candidate algorithms) Tj
 ET
 0.780 0.800 0.835 rg
@@ -539,24 +620,28 @@ BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 120 Tm
-[(These ) -80.94 (are ) -80.94 (candidate ) -80.94 (algorithms ) -80.94 (for ) -80.94 (the ) -80.94 (comparison. ) -80.94 (They ) -80.94 (have ) -80.94 (not ) -80.94 (been ) -80.94 (trained ) -80.94 (for ) -80.94 (this ) -80.94 (project, ) -80.94 (and ) -80.94 (no ) -80.94 (ranking)] TJ
+0.0809 Tw
+(These are candidate algorithms for the comparison. They have not been trained for this project, and no ranking) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 106 Tm
+0 Tw
 (among them is claimed.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 88 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 88 Tm
+0 Tw
 (Logistic regression. A transparent linear baseline for binary risk estimation.) Tj
 ET
 0.780 0.800 0.835 rg
@@ -565,6 +650,7 @@ f
 BT
 0.290 0.333 0.408 rg
 /F1 8 Tf
+0 Tw
 1 0 0 1 54 28 Tm
 (Mahbub Ali  |  Research proposal    2 / 3) Tj
 ET
@@ -574,66 +660,76 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 10 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> >>
 endobj
 10 0 obj
-<< /Length 6077 >>
+<< /Length 5018 >>
 stream
 BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 726 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 726 Tm
-[(Random ) -235.23 (forest. ) -235.23 (An ) -235.23 (ensemble ) -235.23 (of ) -235.23 (decision ) -235.23 (trees ) -235.23 (that ) -235.23 (can ) -235.23 (represent ) -235.23 (non-linear ) -235.23 (relationships ) -235.23 (among ) -235.23 (mixed)] TJ
+0.2352 Tw
+(Random forest. An ensemble of decision trees that can represent non-linear relationships among mixed) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 712 Tm
+0 Tw
 (clinical features.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 696 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 696 Tm
-[(XGBoost. ) -374.92 (Gradient-boosted ) -374.92 (trees, ) -374.92 (included ) -374.92 (because ) -374.92 (they ) -374.92 (are ) -374.92 (often ) -374.92 (strong ) -374.92 (on ) -374.92 (structured ) -374.92 (tables ) -374.92 (when)] TJ
+0.3749 Tw
+(XGBoost. Gradient-boosted trees, included because they are often strong on structured tables when) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 682 Tm
+0 Tw
 (validation is kept strict.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 666 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 666 Tm
-[(Support ) -376.38 (vector ) -376.38 (machine. ) -376.38 (A ) -376.38 (margin-based ) -376.38 (classifier ) -376.38 (trained ) -376.38 (on ) -376.38 (the ) -376.38 (same ) -376.38 (prediction ) -376.38 (task, ) -376.38 (included ) -376.38 (for)] TJ
+0.3764 Tw
+(Support vector machine. A margin-based classifier trained on the same prediction task, included for) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 652 Tm
+0 Tw
 (comparison.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F2 12 Tf
 1 0 0 1 54 626 Tm
+0 Tw
 (Evaluation metrics) Tj
 ET
 0.780 0.800 0.835 rg
@@ -643,24 +739,28 @@ BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 594 Tm
-[(The ) -158.93 (planned ) -158.93 (metrics ) -158.93 (are ) -158.93 (accuracy, ) -158.93 (precision, ) -158.93 (recall, ) -158.93 (F1-score, ) -158.93 (and ) -158.93 (ROC-AUC. ) -158.93 (There ) -158.93 (are ) -158.93 (no ) -158.93 (scores ) -158.93 (to ) -158.93 (report,)] TJ
+0.1589 Tw
+(The planned metrics are accuracy, precision, recall, F1-score, and ROC-AUC. There are no scores to report,) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 580 Tm
-[(because ) -41.67 (the ) -41.67 (models ) -41.67 (have ) -41.67 (not ) -41.67 (been ) -41.67 (trained. ) -41.67 (A ) -41.67 (high ) -41.67 (score ) -41.67 (on ) -41.67 (one ) -41.67 (metric ) -41.67 (would ) -41.67 (not, ) -41.67 (by ) -41.67 (itself, ) -41.67 (show ) -41.67 (that ) -41.67 (a ) -41.67 (model ) -41.67 (is)] TJ
+0.0417 Tw
+(because the models have not been trained. A high score on one metric would not, by itself, show that a model is) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 566 Tm
+0 Tw
 (suitable for clinical use.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F2 12 Tf
 1 0 0 1 54 538 Tm
+0 Tw
 (Explainable AI) Tj
 ET
 0.780 0.800 0.835 rg
@@ -670,30 +770,35 @@ BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 506 Tm
-[(SHAP ) -173.40 (\(SHapley ) -173.40 (Additive ) -173.40 (exPlanations\) ) -173.40 (is ) -173.40 (the ) -173.40 (explainability ) -173.40 (method ) -173.40 (planned ) -173.40 (for ) -173.40 (this ) -173.40 (study. ) -173.40 (The ) -173.40 (intention ) -173.40 (is ) -173.40 (to)] TJ
+0.1734 Tw
+(SHAP \(SHapley Additive exPlanations\) is the explainability method planned for this study. The intention is to) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 492 Tm
+0 Tw
 (report global feature importance and to inspect local explanations for individual records.) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 474 Tm
-[(SHAP ) -84.21 (has ) -84.21 (not ) -84.21 (been ) -84.21 (applied ) -84.21 (in ) -84.21 (this ) -84.21 (project. ) -84.21 (When ) -84.21 (explanations ) -84.21 (exist, ) -84.21 (they ) -84.21 (will ) -84.21 (be ) -84.21 (a ) -84.21 (way ) -84.21 (to ) -84.21 (scrutinise ) -84.21 (the ) -84.21 (model.)] TJ
+0.0842 Tw
+(SHAP has not been applied in this project. When explanations exist, they will be a way to scrutinise the model.) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 460 Tm
+0.3380 Tw
 (They will not be described as proof of clinical cause, and they will not replace a clinician's judgement.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F2 12 Tf
 1 0 0 1 54 432 Tm
+0 Tw
 (Expected outcomes) Tj
 ET
 0.780 0.800 0.835 rg
@@ -703,78 +808,91 @@ BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 400 Tm
-[(If ) -58.19 (the ) -58.19 (study ) -58.19 (is ) -58.19 (completed ) -58.19 (under ) -58.19 (supervision, ) -58.19 (the ) -58.19 (expected ) -58.19 (outputs ) -58.19 (are ) -58.19 (prospective. ) -58.19 (This ) -58.19 (proposal ) -58.19 (does ) -58.19 (not ) -58.19 (report)] TJ
+0.0582 Tw
+(If the study is completed under supervision, the expected outputs are prospective. This proposal does not report) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 54 386 Tm
+0 Tw
 (them as achieved.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 368 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 368 Tm
+0 Tw
 (A written comparison of the four candidate models on one defined early-risk task.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 352 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 352 Tm
+0 Tw
 (A clear account of the dataset, including the population it represents and the limits of that data.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 336 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 336 Tm
+0 Tw
 (A SHAP-based discussion of feature contributions for the model chosen for interpretation.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 320 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 320 Tm
+0.1985 Tw
 (An explicit statement of privacy, bias, and the boundary between research performance and clinical use.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 304 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 304 Tm
+0.1931 Tw
 (Thesis material suitable for a Master's by Research in Computer Science, directed toward healthcare AI.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F2 12 Tf
 1 0 0 1 54 278 Tm
+0 Tw
 (Preparation already underway) Tj
 ET
 0.780 0.800 0.835 rg
@@ -784,48 +902,56 @@ BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 246 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 246 Tm
+0 Tw
 (The proposal text on this page and on the portfolio site.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 230 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 230 Tm
+0.5710 Tw
 (Reading on logistic regression, random forests, gradient boosting, and support vector machines.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 214 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 214 Tm
+0 Tw
 (Study of Python, Pandas, and NumPy for later tabular preparation. No analysis has been run.) Tj
 ET
 BT
 0.055 0.165 0.290 rg
 /F1 10 Tf
 1 0 0 1 54 198 Tm
+0 Tw
 (-) Tj
 ET
 BT
 0.071 0.125 0.200 rg
 /F1 10 Tf
 1 0 0 1 70 198 Tm
+0 Tw
 (Study of SHAP and its limits. The method has not been applied.) Tj
 ET
 0.780 0.800 0.835 rg
@@ -834,6 +960,7 @@ f
 BT
 0.290 0.333 0.408 rg
 /F1 8 Tf
+0 Tw
 1 0 0 1 54 28 Tm
 (Mahbub Ali  |  Research proposal    3 / 3) Tj
 ET
@@ -848,12 +975,12 @@ xref
 0000000197 00000 n 
 0000000272 00000 n 
 0000000408 00000 n 
-0000008242 00000 n 
-0000008378 00000 n 
-0000016787 00000 n 
-0000016924 00000 n 
+0000005816 00000 n 
+0000005952 00000 n 
+0000012265 00000 n 
+0000012402 00000 n 
 trailer
 << /Size 11 /Root 1 0 R >>
 startxref
-23053
+17472
 %%EOF

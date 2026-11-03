@@ -83,21 +83,14 @@ function layout(blocks, footerLabel) {
   function textLine(font, size, x, baseline, color, words, width, justify) {
     const bold = font === "F2";
     const gaps = words.length - 1;
-    const natural = textWidth(words.join(" "), size, bold);
-    const canJustify = justify && gaps > 0 && natural < width - 0.5;
-    commands.push("BT", `${color} rg`, `/${font} ${size} Tf`, `1 0 0 1 ${x} ${Math.round(baseline)} Tm`);
-
-    if (!canJustify) {
-      commands.push(`(${pdfEscape(words.join(" "))}) Tj`, "ET");
-      return;
-    }
-
-    const extra = ((width - natural) / gaps / size) * 1000;
-    const parts = words.map((word, index) => {
-      const chunk = index < gaps ? `${word} ` : word;
-      return index < gaps ? `(${pdfEscape(chunk)}) ${(-extra).toFixed(2)}` : `(${pdfEscape(chunk)})`;
-    });
-    commands.push(`[${parts.join(" ")}] TJ`, "ET");
+    const line = words.join(" ");
+    const natural = textWidth(line, size, bold);
+    const slack = width - natural;
+    const extraPerGap = gaps > 0 ? slack / gaps : width;
+    const canJustify = justify && gaps > 0 && slack > 0.4;
+    commands.push("BT", `${color} rg`, `/${font} ${size} Tf`, `1 0 0 1 ${Math.round(x)} ${Math.round(baseline)} Tm`);
+    commands.push(canJustify ? `${(extraPerGap / size).toFixed(4)} Tw` : "0 Tw");
+    commands.push(`(${pdfEscape(line)}) Tj`, "ET");
   }
 
   for (const block of blocks) {
@@ -123,6 +116,8 @@ function layout(blocks, footerLabel) {
       if (block.kind === "bullet" && index === 0) {
         textLine(style.font, style.size, LEFT, baseline, NAVY, ["-"], 12, false);
       }
+      const natural = textWidth(words.join(" "), style.size, style.font === "F2");
+      const lastLineIsFull = lastLine && natural >= textWidthLimit * 0.86;
       textLine(
         style.font,
         style.size,
@@ -131,7 +126,7 @@ function layout(blocks, footerLabel) {
         style.color,
         words,
         textWidthLimit,
-        Boolean(style.justify) && !lastLine,
+        Boolean(style.justify) && (!lastLine || lastLineIsFull),
       );
       y -= style.line;
     });
@@ -157,6 +152,7 @@ function layout(blocks, footerLabel) {
       "BT",
       `${MUTED} rg`,
       "/F1 8 Tf",
+      "0 Tw",
       `1 0 0 1 ${LEFT} 28 Tm`,
       `(${pdfEscape(footer)}) Tj`,
       "ET",
