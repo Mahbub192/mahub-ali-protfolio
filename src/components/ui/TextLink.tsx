@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import type { ReactNode } from "react";
+import { sitePath } from "@/lib/site";
 
 type TextLinkProps = {
   href: string;
@@ -13,7 +14,7 @@ export function TextLink({ href, children, external = false }: TextLinkProps) {
 
   if (!external) {
     return (
-      <a href={href} className={className}>
+      <a href={sitePath(href)} className={className}>
         {children}
       </a>
     );

@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { ThemeToggle } from "@/components/layout/ThemeToggle";
 import { navigation, profile, sectionIds } from "@/data/portfolio";
 import { cn } from "@/lib/cn";
+import { sitePath } from "@/lib/site";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -60,7 +61,7 @@ export function Navbar() {
       <div className="h-[3px] bg-accent" aria-hidden />
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-5 sm:px-6 lg:px-8">
         <a
-          href="/#top"
+          href={sitePath("/#top")}
           className="flex items-center gap-3"
           onClick={() => setOpen(false)}
         >
@@ -85,7 +86,7 @@ export function Navbar() {
               return (
                 <a
                   key={item.href}
-                  href={item.href}
+                  href={sitePath(item.href)}
                   aria-current={isActive ? "location" : undefined}
                   className={cn(
                     "whitespace-nowrap py-2 text-sm font-semibold transition-colors",
@@ -126,7 +127,7 @@ export function Navbar() {
               return (
                 <a
                   key={item.href}
-                  href={item.href}
+                  href={sitePath(item.href)}
                   aria-current={isActive ? "location" : undefined}
                   className={cn(
                     "border-b border-line py-3 text-base font-semibold",
