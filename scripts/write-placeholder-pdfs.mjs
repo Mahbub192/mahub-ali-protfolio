@@ -19,32 +19,50 @@ const styles = {
   subtitle: { font: "F1", size: 11, color: INK, after: 2, line: 15 },
   meta: { font: "F1", size: 9, color: MUTED, after: 1, line: 13 },
   h: { font: "F2", size: 12, color: NAVY, after: 8, line: 16, rule: true, keep: 46 },
-  body: { font: "F1", size: 10, color: INK, after: 4, line: 14 },
-  bullet: { font: "F1", size: 10, color: INK, after: 2, line: 14, indent: 14 },
+  body: { font: "F1", size: 10, color: INK, after: 4, line: 14, justify: true },
+  bullet: { font: "F1", size: 10, color: INK, after: 2, line: 14, indent: 16, justify: true },
 };
+
+// Helvetica widths for characters 32-126, in thousandths of an em.
+const HELVETICA = [
+  278, 278, 355, 556, 556, 889, 667, 191, 333, 333, 389, 584, 278, 333, 278, 278, 556, 556, 556, 556, 556, 556,
+  556, 556, 556, 556, 278, 278, 584, 584, 584, 556, 1015, 667, 667, 722, 722, 667, 611, 778, 722, 278, 500, 667,
+  556, 833, 722, 778, 667, 778, 722, 667, 611, 722, 667, 944, 667, 667, 611, 278, 278, 278, 469, 556, 222, 556,
+  556, 500, 556, 556, 278, 556, 556, 222, 222, 500, 222, 833, 556, 556, 556, 556, 333, 500, 278, 556, 500, 722,
+  500, 500, 500, 334, 260, 334, 584,
+];
 
 function pdfEscape(value) {
   return value.replaceAll("\\", "\\\\").replaceAll("(", "\\(").replaceAll(")", "\\)");
 }
 
-function wrap(text, size, width) {
-  const maxChars = Math.max(20, Math.floor(width / (size * 0.5)));
+function textWidth(value, size, bold) {
+  const scale = bold ? 1.06 : 1;
+  let units = 0;
+  for (const character of value) {
+    const code = character.charCodeAt(0);
+    units += code >= 32 && code <= 126 ? HELVETICA[code - 32] : 500;
+  }
+  return (units / 1000) * size * scale;
+}
+
+function wrap(text, size, width, bold) {
   const words = text.split(/\s+/).filter(Boolean);
   const lines = [];
-  let current = "";
+  let current = [];
 
   for (const word of words) {
-    const next = current ? `${current} ${word}` : word;
-    if (next.length > maxChars) {
-      if (current) lines.push(current);
-      current = word;
+    const trial = [...current, word];
+    if (current.length > 0 && textWidth(trial.join(" "), size, bold) > width) {
+      lines.push(current);
+      current = [word];
     } else {
-      current = next;
+      current = trial;
     }
   }
 
-  if (current) lines.push(current);
-  return lines.length > 0 ? lines : [""];
+  if (current.length > 0) lines.push(current);
+  return lines.length > 0 ? lines : [[]];
 }
 
 function layout(blocks, footerLabel) {
@@ -62,15 +80,24 @@ function layout(blocks, footerLabel) {
     if (y - height < BOTTOM) closePage();
   }
 
-  function text(font, size, x, baseline, color, value) {
-    commands.push(
-      "BT",
-      `${color} rg`,
-      `/${font} ${size} Tf`,
-      `1 0 0 1 ${x} ${Math.round(baseline)} Tm`,
-      `(${pdfEscape(value)}) Tj`,
-      "ET",
-    );
+  function textLine(font, size, x, baseline, color, words, width, justify) {
+    const bold = font === "F2";
+    const gaps = words.length - 1;
+    const natural = textWidth(words.join(" "), size, bold);
+    const canJustify = justify && gaps > 0 && natural < width - 0.5;
+    commands.push("BT", `${color} rg`, `/${font} ${size} Tf`, `1 0 0 1 ${x} ${Math.round(baseline)} Tm`);
+
+    if (!canJustify) {
+      commands.push(`(${pdfEscape(words.join(" "))}) Tj`, "ET");
+      return;
+    }
+
+    const extra = ((width - natural) / gaps / size) * 1000;
+    const parts = words.map((word, index) => {
+      const chunk = index < gaps ? `${word} ` : word;
+      return index < gaps ? `(${pdfEscape(chunk)}) ${(-extra).toFixed(2)}` : `(${pdfEscape(chunk)})`;
+    });
+    commands.push(`[${parts.join(" ")}] TJ`, "ET");
   }
 
   for (const block of blocks) {
@@ -82,19 +109,30 @@ function layout(blocks, footerLabel) {
 
     const style = styles[block.kind];
     const indent = style.indent ?? 0;
-    const lines = wrap(block.text, style.size, CONTENT_WIDTH - indent);
+    const textWidthLimit = CONTENT_WIDTH - indent;
+    const lines = wrap(block.text, style.size, textWidthLimit, style.font === "F2");
     const blockHeight = lines.length * style.line + style.after + (style.rule ? 6 : 0);
 
     if (style.keep && y - style.keep < BOTTOM) closePage();
     ensure(Math.min(blockHeight, style.line * 2));
 
-    lines.forEach((line, index) => {
+    lines.forEach((words, index) => {
       ensure(style.line);
       const baseline = y - style.size;
+      const lastLine = index === lines.length - 1;
       if (block.kind === "bullet" && index === 0) {
-        commands.push(`${NAVY} rg`, `${LEFT + 2} ${Math.round(baseline + 3)} 1.15 0 360 arc`, "f");
+        textLine(style.font, style.size, LEFT, baseline, NAVY, ["-"], 12, false);
       }
-      text(style.font, style.size, LEFT + indent, baseline, style.color, line);
+      textLine(
+        style.font,
+        style.size,
+        LEFT + indent,
+        baseline,
+        style.color,
+        words,
+        textWidthLimit,
+        Boolean(style.justify) && !lastLine,
+      );
       y -= style.line;
     });
 
