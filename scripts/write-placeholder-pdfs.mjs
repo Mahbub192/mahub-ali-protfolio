@@ -5,24 +5,30 @@ import { fileURLToPath } from "node:url";
 const documentsDir = join(dirname(fileURLToPath(import.meta.url)), "..", "public", "documents");
 
 const LEFT = 54;
-const TOP = 748;
-const BOTTOM = 64;
-const PAGE_WIDTH = 504;
+const RIGHT = 558;
+const TOP = 736;
+const BOTTOM = 58;
+const CONTENT_WIDTH = RIGHT - LEFT;
+const NAVY = "0.055 0.165 0.290";
+const INK = "0.071 0.125 0.200";
+const MUTED = "0.290 0.333 0.408";
+const LINE = "0.780 0.800 0.835";
 
 const styles = {
-  title: { font: "F2", size: 18, after: 4 },
-  subtitle: { font: "F1", size: 11, after: 2 },
-  h: { font: "F2", size: 12, after: 4 },
-  body: { font: "F1", size: 10, after: 2 },
-  bullet: { font: "F1", size: 10, after: 1 },
+  title: { font: "F2", size: 22, color: NAVY, after: 3, line: 26 },
+  subtitle: { font: "F1", size: 11, color: INK, after: 2, line: 15 },
+  meta: { font: "F1", size: 9, color: MUTED, after: 1, line: 13 },
+  h: { font: "F2", size: 12, color: NAVY, after: 8, line: 16, rule: true, keep: 46 },
+  body: { font: "F1", size: 10, color: INK, after: 4, line: 14 },
+  bullet: { font: "F1", size: 10, color: INK, after: 2, line: 14, indent: 14 },
 };
 
 function pdfEscape(value) {
   return value.replaceAll("\\", "\\\\").replaceAll("(", "\\(").replaceAll(")", "\\)");
 }
 
-function wrap(text, size, extra = 0) {
-  const maxChars = Math.max(24, Math.floor(PAGE_WIDTH / (size * 0.56)) - extra);
+function wrap(text, size, width) {
+  const maxChars = Math.max(20, Math.floor(width / (size * 0.5)));
   const words = text.split(/\s+/).filter(Boolean);
   const lines = [];
   let current = "";
@@ -47,13 +53,24 @@ function layout(blocks, footerLabel) {
   let y = TOP;
 
   function closePage() {
-    if (commands.length > 0) pages.push(commands.join("\n"));
+    if (commands.length > 0) pages.push(commands);
     commands = [];
     y = TOP;
   }
 
   function ensure(height) {
     if (y - height < BOTTOM) closePage();
+  }
+
+  function text(font, size, x, baseline, color, value) {
+    commands.push(
+      "BT",
+      `${color} rg`,
+      `/${font} ${size} Tf`,
+      `1 0 0 1 ${x} ${Math.round(baseline)} Tm`,
+      `(${pdfEscape(value)}) Tj`,
+      "ET",
+    );
   }
 
   for (const block of blocks) {
@@ -64,30 +81,48 @@ function layout(blocks, footerLabel) {
     }
 
     const style = styles[block.kind];
-    const lines = wrap(block.text, style.size, block.kind === "bullet" ? 2 : 0);
-    const lineHeight = style.size + 4;
+    const indent = style.indent ?? 0;
+    const lines = wrap(block.text, style.size, CONTENT_WIDTH - indent);
+    const blockHeight = lines.length * style.line + style.after + (style.rule ? 6 : 0);
+
+    if (style.keep && y - style.keep < BOTTOM) closePage();
+    ensure(Math.min(blockHeight, style.line * 2));
 
     lines.forEach((line, index) => {
-      ensure(lineHeight);
-      const shown = block.kind === "bullet" && index === 0 ? `- ${line}` : line;
-      commands.push(
-        "BT",
-        `/${style.font} ${style.size} Tf`,
-        `1 0 0 1 ${LEFT} ${Math.round(y - style.size)} Tm`,
-        `(${pdfEscape(shown)}) Tj`,
-        "ET",
-      );
-      y -= lineHeight;
+      ensure(style.line);
+      const baseline = y - style.size;
+      if (block.kind === "bullet" && index === 0) {
+        commands.push(`${NAVY} rg`, `${LEFT + 2} ${Math.round(baseline + 3)} 1.15 0 360 arc`, "f");
+      }
+      text(style.font, style.size, LEFT + indent, baseline, style.color, line);
+      y -= style.line;
     });
+
+    if (style.rule) {
+      y -= 3;
+      commands.push(`${LINE} rg`, `${LEFT} ${Math.round(y)} ${CONTENT_WIDTH} 0.8 re`, "f");
+      y -= 7;
+    }
 
     y -= style.after;
   }
 
   closePage();
 
-  return pages.map((stream, index) => {
+  return pages.map((pageCommands, index) => {
     const footer = `${footerLabel}    ${index + 1} / ${pages.length}`;
-    return `${stream}\nBT /F1 9 Tf 1 0 0 1 ${LEFT} 36 Tm (${pdfEscape(footer)}) Tj ET`;
+    return [
+      ...pageCommands,
+      `${LINE} rg`,
+      `${LEFT} 42 ${CONTENT_WIDTH} 0.6 re`,
+      "f",
+      "BT",
+      `${MUTED} rg`,
+      "/F1 8 Tf",
+      `1 0 0 1 ${LEFT} 28 Tm`,
+      `(${pdfEscape(footer)}) Tj`,
+      "ET",
+    ].join("\n");
   });
 }
 
@@ -136,9 +171,8 @@ const cv = layout(
   [
     { kind: "title", text: "Mahbub Ali" },
     { kind: "subtitle", text: "Software Developer | Aspiring AI Researcher" },
-    { kind: "subtitle", text: "Curriculum vitae" },
-    { kind: "body", text: "Email: mahbubaligub182@gmail.com" },
-    { kind: "body", text: "LinkedIn: https://www.linkedin.com/in/mahbub-ali-fullstack/" },
+    { kind: "meta", text: "Email  mahbubaligub182@gmail.com" },
+    { kind: "meta", text: "LinkedIn  linkedin.com/in/mahbub-ali-fullstack" },
     { kind: "gap", amount: 10 },
     { kind: "h", text: "Profile" },
     {
