@@ -1,26 +1,68 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+  --background: #f3f5f8;
+  --surface: #ffffff;
+  --foreground: #122033;
+  --muted: #4a5568;
+  --navy: #0e2a4a;
+  --line: #dce3ec;
+  --accent: #0e2a4a;
+  --accent-foreground: #ffffff;
+  --chip: #eef2f6;
+}
+
+.dark {
+  color-scheme: dark;
+  --background: #0b1220;
+  --surface: #121a2b;
+  --foreground: #e7eef6;
+  --muted: #b3c0d0;
+  --navy: #a9c7e8;
+  --line: #2a384c;
+  --accent: #e7eef6;
+  --accent-foreground: #0b1220;
+  --chip: #1a2436;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-navy: var(--navy);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-chip: var(--chip);
+  --font-sans: var(--font-source-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-newsreader), ui-serif, Georgia, "Times New Roman", serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
+
+:focus-visible {
+  outline: 2px solid var(--navy);
+  outline-offset: 3px;
 }

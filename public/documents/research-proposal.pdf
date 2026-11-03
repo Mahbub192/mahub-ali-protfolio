@@ -1,0 +1,648 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 3 /Kids [5 0 R 7 0 R 9 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 6 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> >>
+endobj
+6 0 obj
+<< /Length 4389 >>
+stream
+BT
+/F2 18 Tf
+1 0 0 1 54 730 Tm
+(Mahbub Ali) Tj
+ET
+BT
+/F1 11 Tf
+1 0 0 1 54 711 Tm
+(Research proposal) Tj
+ET
+BT
+/F2 12 Tf
+1 0 0 1 54 687 Tm
+(Machine Learning-Based Predictive Analytics for Early Disease Risk) Tj
+ET
+BT
+/F2 12 Tf
+1 0 0 1 54 671 Tm
+(Detection Using Electronic Health Records) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 649 Tm
+(Level: Master's by Research. Field: Computer Science.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 633 Tm
+(Prepared for your university and the supervisors reviewing this proposal. This is not a) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 619 Tm
+(current enrolment.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 603 Tm
+(Candidate background: Bachelor's in Computer Science and Engineering, Green University of) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 589 Tm
+(Bangladesh, CGPA 3.54. Software Developer, 3+ years.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 573 Tm
+(Status: proposal in preparation. This document is not completed research, not a) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 559 Tm
+(publication, and it does not report experiments or model results.) Tj
+ET
+BT
+/F2 12 Tf
+1 0 0 1 54 533 Tm
+(Background) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 515 Tm
+(Electronic health records collect diagnoses, medications, laboratory results, and) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 501 Tm
+(encounter histories over time. That longitudinal record may contain signals of disease) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 487 Tm
+(risk earlier than a single visit would show. Machine learning has been studied for this) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 473 Tm
+(kind of prediction, but a useful model still depends on the outcome definition, the) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 459 Tm
+(validation design, and whether a reviewer can see why a prediction was made.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 443 Tm
+(What follows is the study I intend to pursue. The specific condition, outcome label, and) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 429 Tm
+(prediction window are not fixed yet. They should be chosen after a literature review and) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 415 Tm
+(after a suitable dataset is identified, and they should be locked before any model) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 401 Tm
+(comparison begins.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 385 Tm
+(The practical background is healthcare software, not a finished prediction study. That) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 371 Tm
+(work includes HealthConnect, PrimeMIS, Sakura ENT Center, prescription writing, and) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 357 Tm
+(MediScan Pro, grouped in part under the company name SakuraEHealth. A May 2025 field) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 343 Tm
+(summary for MediScan Pro, in Dhaka, reports report time, ease of use, and cost for an) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 329 Tm
+(offline USB endoscopy workflow. It does not report classifier accuracy, and it is not) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 315 Tm
+(this electronic-health-record study.) Tj
+ET
+BT
+/F2 12 Tf
+1 0 0 1 54 289 Tm
+(Problem statement) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 271 Tm
+(Disease risk is often recognised only after symptoms are established, when the) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 257 Tm
+(opportunity to act earlier may already be narrower. Electronic health records hold) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 243 Tm
+(information that could support earlier risk stratification, but those records are uneven,) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 229 Tm
+(sometimes incomplete, and always sensitive.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 213 Tm
+(The problem this proposal addresses is how to compare standard predictive models for) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 199 Tm
+(early disease risk detection on electronic health record data, and how to explain the) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 185 Tm
+(predictions, without treating a research metric as a clinical decision.) Tj
+ET
+BT
+/F2 12 Tf
+1 0 0 1 54 159 Tm
+(Objectives) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 141 Tm
+(- Review published research on machine learning for early disease risk detection using) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 127 Tm
+(electronic health records.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 112 Tm
+(- Select one ethically accessible dataset and document its population, features,) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 98 Tm
+(missingness, and known biases.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 83 Tm
+(- Define the prediction outcome and time horizon, then prepare the data without leaking) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 69 Tm
+(information into the test set.) Tj
+ET
+BT /F1 9 Tf 1 0 0 1 54 36 Tm (Mahbub Ali  |  Research proposal    1 / 3) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 8 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> >>
+endobj
+8 0 obj
+<< /Length 4768 >>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 54 738 Tm
+(- Train and compare logistic regression, random forest, XGBoost, and support vector) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 724 Tm
+(machine models.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 709 Tm
+(- Evaluate the models with accuracy, precision, recall, F1-score, and ROC-AUC.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 694 Tm
+(- Apply SHAP to interpret feature contributions for the selected model or models.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 679 Tm
+(- State the privacy, bias, and clinical-use limits of any finding.) Tj
+ET
+BT
+/F2 12 Tf
+1 0 0 1 54 654 Tm
+(Research questions) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 636 Tm
+(- To what extent can these models estimate early disease risk from the features available) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 622 Tm
+(in the selected electronic health records?) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 607 Tm
+(- How do logistic regression, random forest, XGBoost, and support vector machines compare) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 593 Tm
+(on accuracy, precision, recall, F1-score, and ROC-AUC?) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 578 Tm
+(- Which features contribute most to the predictions according to SHAP, and how should) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 564 Tm
+(those explanations be read?) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 549 Tm
+(- What limits of data quality, bias, and privacy must qualify the findings?) Tj
+ET
+BT
+/F2 12 Tf
+1 0 0 1 54 524 Tm
+(Methodology) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 506 Tm
+(The study is planned in six stages. None of these stages has been carried out, and no) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 492 Tm
+(dataset has been selected.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 476 Tm
+(1. Literature review. Survey peer-reviewed work on electronic health record risk) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 462 Tm
+(prediction, evaluation practice, and explainable AI in healthcare. Use that review to fix) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 448 Tm
+(the clinical question, the outcome definition, and the prediction horizon before any) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 434 Tm
+(model is trained.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 418 Tm
+(2. Dataset selection. Use a public dataset with a clear licence, or a dataset available) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 404 Tm
+(under institutional approval. Record who it represents and what it cannot support. No) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 390 Tm
+(identifiable patient data is collected for this proposal.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 374 Tm
+(3. Data preparation. Define the cohort and the outcome from the selected records. Inspect) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 360 Tm
+(missing values, coding differences, and class balance before choosing how to handle them.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 346 Tm
+(Where records are longitudinal, split training, validation, and test data by patient so) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 332 Tm
+(that one person's later visits do not leak into training.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 316 Tm
+(4. Model development. Train logistic regression, random forest, XGBoost, and a support) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 302 Tm
+(vector machine as comparable candidates. Tune hyperparameters on validation data only.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 288 Tm
+(Reserve the test set for one final comparison.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 272 Tm
+(5. Evaluation and explanation. Compare the models with accuracy, precision, recall,) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 258 Tm
+(F1-score, and ROC-AUC. Discuss the decision threshold in relation to false negatives and) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 244 Tm
+(false positives. Apply SHAP so feature contributions can be read alongside the scores.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 228 Tm
+(6. Ethical boundary. Keep the work inside research evaluation. A later clinical use would) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 214 Tm
+(need separate validation, clinical collaboration, and the appropriate regulatory review.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 200 Tm
+(This proposal is not a plan to deploy a diagnostic system.) Tj
+ET
+BT
+/F2 12 Tf
+1 0 0 1 54 174 Tm
+(Candidate algorithms) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 156 Tm
+(These are candidate algorithms for the comparison. They have not been trained for this) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 142 Tm
+(project, and no ranking among them is claimed.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 126 Tm
+(- Logistic regression. A transparent linear baseline for binary risk estimation.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 111 Tm
+(- Random forest. An ensemble of decision trees that can represent non-linear) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 97 Tm
+(relationships among mixed clinical features.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 82 Tm
+(- XGBoost. Gradient-boosted trees, included because they are often strong on structured) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 68 Tm
+(tables when validation is kept strict.) Tj
+ET
+BT /F1 9 Tf 1 0 0 1 54 36 Tm (Mahbub Ali  |  Research proposal    2 / 3) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 10 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> >>
+endobj
+10 0 obj
+<< /Length 3127 >>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 54 738 Tm
+(- Support vector machine. A margin-based classifier trained on the same prediction task,) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 724 Tm
+(included for comparison.) Tj
+ET
+BT
+/F2 12 Tf
+1 0 0 1 54 699 Tm
+(Evaluation metrics) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 681 Tm
+(The planned metrics are accuracy, precision, recall, F1-score, and ROC-AUC. There are no) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 667 Tm
+(scores to report, because the models have not been trained. A high score on one metric) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 653 Tm
+(would not, by itself, show that a model is suitable for clinical use.) Tj
+ET
+BT
+/F2 12 Tf
+1 0 0 1 54 627 Tm
+(Explainable AI) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 609 Tm
+(SHAP \(SHapley Additive exPlanations\) is the explainability method planned for this study.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 595 Tm
+(The intention is to report global feature importance and to inspect local explanations) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 581 Tm
+(for individual records.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 565 Tm
+(SHAP has not been applied in this project. When explanations exist, they will be a way to) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 551 Tm
+(scrutinise the model. They will not be described as proof of clinical cause, and they) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 537 Tm
+(will not replace a clinician's judgement.) Tj
+ET
+BT
+/F2 12 Tf
+1 0 0 1 54 511 Tm
+(Expected outcomes) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 493 Tm
+(If the study is completed under supervision, the expected outputs are prospective. This) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 479 Tm
+(proposal does not report them as achieved.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 463 Tm
+(- A written comparison of the four candidate models on one defined early-risk task.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 448 Tm
+(- A clear account of the dataset, including the population it represents and the limits) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 434 Tm
+(of that data.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 419 Tm
+(- A SHAP-based discussion of feature contributions for the model chosen for) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 405 Tm
+(interpretation.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 390 Tm
+(- An explicit statement of privacy, bias, and the boundary between research performance) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 376 Tm
+(and clinical use.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 361 Tm
+(- Thesis material suitable for a Master's by Research in Computer Science, directed) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 347 Tm
+(toward healthcare AI.) Tj
+ET
+BT
+/F2 12 Tf
+1 0 0 1 54 322 Tm
+(Preparation already underway) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 304 Tm
+(- The proposal text on this page and on the portfolio site.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 289 Tm
+(- Reading on logistic regression, random forests, gradient boosting, and support vector) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 275 Tm
+(machines.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 260 Tm
+(- Study of Python, Pandas, and NumPy for later tabular preparation. No analysis has been) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 246 Tm
+(run.) Tj
+ET
+BT
+/F1 10 Tf
+1 0 0 1 54 231 Tm
+(- Study of SHAP and its limits. The method has not been applied.) Tj
+ET
+BT /F1 9 Tf 1 0 0 1 54 36 Tm (Mahbub Ali  |  Research proposal    3 / 3) Tj ET
+endstream
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000272 00000 n 
+0000000408 00000 n 
+0000004848 00000 n 
+0000004984 00000 n 
+0000009803 00000 n 
+0000009940 00000 n 
+trailer
+<< /Size 11 /Root 1 0 R >>
+startxref
+13119
+%%EOF
